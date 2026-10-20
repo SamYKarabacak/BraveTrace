@@ -4,8 +4,8 @@ Search PDFs, Markdown, and text files, then open the exact passages behind each
 result. BraveTrace runs locally with a Python backend and SQLite. Ollama adds
 optional AI answers and semantic search.
 
-The idea is simple: finding an answer should also make it easy to check where it
-came from. Search works without installing a model.
+Search works without installing a model. Each result links back to the source
+passage, so you can read the surrounding text before using it.
 
 ## Features
 

@@ -205,7 +205,7 @@ Exercise: explain the purpose of the `run_documents` join table. Why would delet
 only the document row leave sensitive text in saved JSON? Read the test where a
 source disappears during generation and explain the final transaction check.
 
-## Stage 9 — Evaluation, polish, and GitHub
+## Stage 9 — Evaluation and tests
 
 `scripts/evaluate.py` loads examples into temporary storage and checks 18 known
 questions. It prints retrieval case results and mean reciprocal rank. The current
@@ -220,16 +220,15 @@ fixed responses/vectors verify integration, not model intelligence.
 Ruff checks Python style and formatting. Optional Prettier scripts format the
 frontend and browser test. CI runs the Python checks on Windows and Linux.
 
-For the next stage, choose a substantive improvement to implement yourself and
-document your decisions. Examples:
+## Further work
+
+Some useful extensions to explore:
 
 - Add an OCR adapter and tests for scanned documents.
 - Add a reviewed answer-quality dataset with conflicting and unanswerable cases.
 - Compare several passage sizes against a larger independent retrieval dataset.
 - Add search highlighting that marks individual matched concepts in previews.
 
-Work through one component at a time and commit at each checkpoint. Trace its
-inputs, outputs, failure paths, and tests before changing it.
-
-Keep a short decision log describing the problem, your change, and its measured
-result. Use fictional data for demonstrations.
+Before changing a component, trace its inputs, outputs, failure paths, and tests.
+Record the problem, design choices, and measured result alongside the change.
+Use fictional data for demonstrations.
